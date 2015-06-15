@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/now_time"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="16dip" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/now_img"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:background="@drawable/icon01" />
+
+            <TextView
+                android:id="@+id/now_status"
+                android:layout_width="0dip"
+                android:layout_height="60dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:textColor="#000000"
+                android:textSize="15dip" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

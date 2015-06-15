@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="농산물 소득정보"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnSelectCrop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="작물선택"
+            android:textColor="#ff0000"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSelectTech"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="소득정보"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <TextView
+        android:id="@+id/tvSelect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:text="품목선택"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnChoiceCategory1"
+        android:background="@drawable/sunteck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="선택하세요"
+        android:textSize="20sp"
+         />
+    
+    <TextView
+        android:id="@+id/tvSelect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="연도선택"
+        android:textColor="#000000"
+         />
+    
+    <Button
+        android:id="@+id/btnChoiceCategory2"
+        android:background="@drawable/sunteck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택하세요"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvSelect3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="지역선택"
+        android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnChoiceCategory3"
+            android:background="@drawable/sunteck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="선택하세요"
+            android:textSize="20sp" />
+
+        <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#dddddd"
+        android:dividerHeight="1dp"
+        android:gravity="center_horizontal" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <TextView
+            android:id="@+id/tvSelect1OnTech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="대분류"
+            android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnChoiceCategory1OnTech"
+        android:background="@drawable/sunteck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택하세요"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/tvSelect2OnTech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="소분류"
+        android:textColor="#000000" />
+    
+    <Button
+        android:id="@+id/btnChoiceCategory2OnTech"
+        android:background="@drawable/sunteck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="선택하세요"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listViewOnTech"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#dddddd"
+        android:dividerHeight="1dp"
+        android:gravity="center_horizontal" >
+    </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:19
+-keep class com.example.nongsaro.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.example.nongsaro.TechActivity { <init>(...); }
+
